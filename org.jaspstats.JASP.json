@@ -127,17 +127,19 @@
             ]
         },
         {
-			"name": "v8",
-			"buildsystem": "simple",
-			"sources": [
-				{
-					"type": "archive",
-					"url": "https://static.jasp-stats.org/v8-lock.tar.gz",
-					"sha256": "c0365c9ffa943263733a2e7447cd004d59f041c6f9e19f5044c27168b79829ee"
-				}
-			],
-            "build-commands": [ "./install.sh"]
-		},
+            "name": "v8",
+            "buildsystem": "simple",
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://static.jasp-stats.org/v8-lock.tar.gz",
+                    "sha256": "c0365c9ffa943263733a2e7447cd004d59f041c6f9e19f5044c27168b79829ee"
+                }
+            ],
+            "build-commands": [
+                "./install.sh"
+            ]
+        },
         "RPackages.json",
         {
             "name": "readstat",
@@ -156,12 +158,13 @@
             "config-opts": [
                 "--trace-expand",
                 "-DINSTALL_R_MODULES=ON",
-                "-DFLATPAK_USED=ON"],
+                "-DFLATPAK_USED=ON"
+            ],
             "sources": [
                 {
-                   "type": "git",
-                   "commit": "e20cba950dbac0d104d2015da1cc5bf1366aa8a3",
-                   "url": "https://github.com/jasp-stats/jasp-desktop.git"
+                    "type": "git",
+                    "commit": "e20cba950dbac0d104d2015da1cc5bf1366aa8a3",
+                    "url": "https://github.com/jasp-stats/jasp-desktop.git"
                 }
             ]
         }
